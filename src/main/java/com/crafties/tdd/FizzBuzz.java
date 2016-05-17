@@ -3,6 +3,7 @@ package com.crafties.tdd;
 public class FizzBuzz {
 
     private static final String FIZZ = "fizz";
+    private static final String BUZZ = "buzz";
 
     public String display(int number) {
 
@@ -11,7 +12,7 @@ public class FizzBuzz {
         }
 
         if (number % 5 == 0) {
-            return "buzz";
+            return BUZZ;
         }
 
         return Integer.toString(number);
