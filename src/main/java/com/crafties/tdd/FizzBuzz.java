@@ -4,8 +4,13 @@ public class FizzBuzz {
 
     private static final String FIZZ = "fizz";
     private static final String BUZZ = "buzz";
+    private static final String FIZZ_BUZZ = "fizzbuzz";
 
     public String display(int number) {
+
+        if (isMultipleOfThree(number) && isMultipleOfFive(number)) {
+            return FIZZ_BUZZ;
+        }
 
         if (isMultipleOfThree(number)) {
             return FIZZ;
