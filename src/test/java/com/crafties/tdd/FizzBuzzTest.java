@@ -44,4 +44,16 @@ public class FizzBuzzTest {
         assertThat(result, is("fizz"));
     }
 
+    @Test
+    public void should_display_buzz_when_multiple_of_5() {
+        // given
+        FizzBuzz fizzbuzz = new FizzBuzz();
+
+        // when
+        String result = fizzbuzz.display(10);
+
+        // then
+        assertThat(result, is("buzz"));
+    }
+
 }

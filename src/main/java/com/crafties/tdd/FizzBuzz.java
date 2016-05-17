@@ -10,6 +10,10 @@ public class FizzBuzz {
             return FIZZ;
         }
 
+        if (number % 5 == 0) {
+            return "buzz";
+        }
+
         return Integer.toString(number);
     }
 
