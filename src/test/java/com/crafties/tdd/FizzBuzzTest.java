@@ -32,4 +32,16 @@ public class FizzBuzzTest {
 
     }
 
+    @Test
+    public void should_display_fizz_when_multiple_of_3() {
+        // given
+        FizzBuzz fizzbuzz = new FizzBuzz();
+
+        // when
+        String result = fizzbuzz.display(6);
+
+        // then
+        assertThat(result, is("fizz"));
+    }
+
 }
