@@ -19,5 +19,17 @@ public class FizzBuzzTest {
         assertThat(result, is("1"));
     }
 
+    @Test
+    public void should_display_n_when_n() {
+        // given
+        FizzBuzz fizzbuzz = new FizzBuzz();
+
+        // when
+        String result = fizzbuzz.display(2);
+
+        // then
+        assertThat(result, is("2"));
+
+    }
 
 }
