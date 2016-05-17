@@ -7,15 +7,23 @@ public class FizzBuzz {
 
     public String display(int number) {
 
-        if (number % 3 == 0) {
+        if (isMultipleOfThree(number)) {
             return FIZZ;
         }
 
-        if (number % 5 == 0) {
+        if (isMultipleOfFive(number)) {
             return BUZZ;
         }
 
         return Integer.toString(number);
+    }
+
+    private boolean isMultipleOfFive(int number) {
+        return number % 5 == 0;
+    }
+
+    private boolean isMultipleOfThree(int number) {
+        return number % 3 == 0;
     }
 
 }
